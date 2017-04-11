@@ -14,6 +14,8 @@
 		29A4CA841E9D3288003E0632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A4CA821E9D3288003E0632 /* LaunchScreen.storyboard */; };
 		29A4CA8F1E9D3288003E0632 /* FaceOnACaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A4CA8E1E9D3288003E0632 /* FaceOnACaseTests.swift */; };
 		29A4CA9A1E9D3289003E0632 /* FaceOnACaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A4CA991E9D3289003E0632 /* FaceOnACaseUITests.swift */; };
+		29A4CAA81E9D4C34003E0632 /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A4CAA71E9D4C34003E0632 /* CaptureController.swift */; };
+		29A4CAAA1E9D5884003E0632 /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A4CAA91E9D5884003E0632 /* Capture.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		29A4CA951E9D3288003E0632 /* FaceOnACaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceOnACaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A4CA991E9D3289003E0632 /* FaceOnACaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceOnACaseUITests.swift; sourceTree = "<group>"; };
 		29A4CA9B1E9D3289003E0632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A4CAA71E9D4C34003E0632 /* CaptureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		29A4CAA91E9D5884003E0632 /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				29A4CA791E9D3288003E0632 /* AppDelegate.swift */,
 				29A4CA7B1E9D3288003E0632 /* ViewController.swift */,
+				29A4CAA71E9D4C34003E0632 /* CaptureController.swift */,
 				29A4CA7D1E9D3288003E0632 /* Main.storyboard */,
+				29A4CAA91E9D5884003E0632 /* Capture.storyboard */,
 				29A4CA801E9D3288003E0632 /* Assets.xcassets */,
 				29A4CA821E9D3288003E0632 /* LaunchScreen.storyboard */,
 				29A4CA851E9D3288003E0632 /* Info.plist */,
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A4CAAA1E9D5884003E0632 /* Capture.storyboard in Resources */,
 				29A4CA841E9D3288003E0632 /* LaunchScreen.storyboard in Resources */,
 				29A4CA811E9D3288003E0632 /* Assets.xcassets in Resources */,
 				29A4CA7F1E9D3288003E0632 /* Main.storyboard in Resources */,
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A4CA7C1E9D3288003E0632 /* ViewController.swift in Sources */,
+				29A4CAA81E9D4C34003E0632 /* CaptureController.swift in Sources */,
 				29A4CA7A1E9D3288003E0632 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,9 +425,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 573NV7K49N;
 				INFOPLIST_FILE = FaceOnACase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.lux.nova.FaceOnACase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,9 +440,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 573NV7K49N;
 				INFOPLIST_FILE = FaceOnACase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.lux.nova.FaceOnACase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
