@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var headingLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     
-//    @IBAction func takePicture(_ sender: UIButton) {
-//
-//       
-//    }
+    @IBAction func takePicture(_ sender: UIButton) {
+
+       
+    }
     @IBAction func choosePicture(_ sender: UIButton) {
     }
     
