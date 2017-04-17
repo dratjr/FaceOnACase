@@ -38,6 +38,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="JRa-sQ-2rH" id="xBe-V9-Jh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTg-Jn-QdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
