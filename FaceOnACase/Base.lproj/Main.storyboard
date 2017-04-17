@@ -13,7 +13,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FaceOnACase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -88,13 +87,14 @@
                         <outlet property="headingLabel" destination="cG8-rC-Hhf" id="3wD-Cv-Thp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
         <!--CaptureController-->
         <scene sceneID="OaV-g2-2c5">
             <objects>
-                <viewControllerPlaceholder storyboardName="Capture" referencedIdentifier="CaptureController" id="fB0-PB-k7v" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Capture" storyboardName="Capture" referencedIdentifier="CaptureController" id="fB0-PB-k7v" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8A-yp-vT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="878" y="40"/>

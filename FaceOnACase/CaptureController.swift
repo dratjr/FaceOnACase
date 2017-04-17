@@ -25,23 +25,26 @@ class CaptureController: UIViewController, AVCapturePhotoCaptureDelegate {
         captureSesssion.sessionPreset = AVCaptureSessionPresetPhoto
         cameraOutput = AVCapturePhotoOutput()
         
+        
+        
         let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
-        if let input = try? AVCaptureDeviceInput(device: device) {
+        do {
+            let input = try AVCaptureDeviceInput(device: device)
             if (captureSesssion.canAddInput(input)) {
                 captureSesssion.addInput(input)
                 if (captureSesssion.canAddOutput(cameraOutput)) {
                     captureSesssion.addOutput(cameraOutput)
                     previewLayer = AVCaptureVideoPreviewLayer(session: captureSesssion)
-                    previewLayer.frame = previewView.bounds
+                    self.previewLayer?.frame = self.previewView.bounds
                     previewView.layer.addSublayer(previewLayer)
                     captureSesssion.startRunning()
                 }
             } else {
                 print("issue here : captureSesssion.canAddInput")
             }
-        } else {
-            print("some problem here")
+        } catch let error {
+            print("error \(error.localizedDescription)")
         }
     }
     
@@ -62,7 +65,7 @@ class CaptureController: UIViewController, AVCapturePhotoCaptureDelegate {
     func capture(_ captureOutput: AVCapturePhotoOutput,  didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?,  previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings:  AVCaptureResolvedPhotoSettings, bracketSettings:   AVCaptureBracketedStillImageSettings?, error: Error?) {
         
         if let error = error {
-            print("error occure : \(error.localizedDescription)")
+            print("error occured : \(error.localizedDescription)")
         }
         
         if  let sampleBuffer = photoSampleBuffer,
